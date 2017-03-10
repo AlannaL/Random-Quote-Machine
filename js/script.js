@@ -24,7 +24,7 @@ $(document).ready(function() {
   
   //tweet out quote on click
   $(".twitter-share-button").on("click", function() {
-      $('a').attr('href', 'https://twitter.com/intent/tweet?text=' + encodeURIComponent('"' + quote + '" -- ' +
+      $(this).attr('href', 'https://twitter.com/intent/tweet?text=' + encodeURIComponent('"' + quote + '" -- ' +
         author +''));
     })
  
