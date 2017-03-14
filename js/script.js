@@ -14,7 +14,7 @@ $(document).ready(function() {
 
   //display quote when button is clicked
   $("#quote").on("click", function() {
-    $.getJSON("https://quote-api.gomix.me/pull/1", function(data) {
+    $.getJSON("https://cors-anywhere.herokuapp.com/https://quote-api.gomix.me/pull/1", function(data) {
       quote = data[0].body;
       author = data[0].author;
       $('#quote-body').text('"' + quote + '"');
